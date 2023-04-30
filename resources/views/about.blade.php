@@ -94,7 +94,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6 py-3">
             <div class="img-fluid text-center">
-              <img src="{{asset('front-end/assets/img/19199085.jpg')}}" alt="" class="w-75">
+              <img src="{{asset('front-end/assets/img/logo.png')}}" alt="" class="w-75">
             </div>
           </div>
           <div class="col-lg-6 py-3 pr-lg-5">

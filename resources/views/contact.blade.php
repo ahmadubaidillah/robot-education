@@ -44,7 +44,7 @@
               <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item ">
-              <a href="about.html" class="nav-link">About</a>
+              <a href="/about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
                 <a href="/program" class="nav-link">Programs</a>
@@ -58,7 +58,7 @@
             <a href="/testimoni" class="nav-link">Testimonials</a>
             </li>
             <li class="nav-item active">
-              <a href="contact.html" class="nav-link">Contact</a>
+              <a href="/contact" class="nav-link">Contact</a>
             </li>
           </ul>
 

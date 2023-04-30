@@ -66,7 +66,7 @@
               <a href="/testimoni" class="nav-link">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="/contact" class="nav-link">Contact</a>
               </li>
             </ul>
 
