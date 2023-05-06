@@ -93,78 +93,31 @@
         <div class="container">
 
           <div class="row justify-content-center">
-            
+          @foreach ($data as $row)
             <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
               <div class="card-pricing">
                 <div class="header">
                   <img
-                    src="{{asset('front-end/assets/img/IMG_8310.JPG')}}"
+                    src="{{asset('fotoprogram/'.$row->foto)}}"
                     alt=""
                     class="w-75 mb-3"
                     style="border-radius: 20px"
                   />
-                  <div class="price-title text-dark">Private Class</div>
+                  <div class="price-title text-dark mt-5 mb-5">{{$row->nama}}</div>
                 </div>
-                <div class="body py-3">
+                <!-- <div class="body py-3">
                   <div class="price-info">
                     <p>Program Kelas Private Belajar Robotika</p>
                   </div>
-                </div>
+                </div> -->
                 <div class="footer">
-                  <a href="/programdetail" class="btn btn-primary rounded-pill bg-danger"
+                  <a href="/programdetail/{{$row->id}}" class="btn btn-primary rounded-pill bg-danger"
                     >Detail Pogram</a
                   >
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
-                  <img
-                    src="{{asset('front-end/assets/img/_DSC0805.JPG')}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="price-title text-dark">Robotic Class</div>
-                </div>
-                <div class="body py-3">
-                  <div class="price-info">
-                    <p>Program Kelas Belajar Robotika</p>
-                  </div>
-                </div>
-                <div class="footer">
-                  <a href="/programdetail" class="btn btn-primary rounded-pill bg-danger"
-                    >Detail Pogram</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
-                  <img
-                    src="{{asset('front-end/assets/img/IMG_8387.JPG')}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="price-title text-dark">Robotic Workshop</div>
-                </div>
-                <div class="body py-3">
-                  <div class="price-info">
-                    <p>Program Workshop Belajar Robotika</p>
-                  </div>
-                </div>
-                <div class="footer">
-                  <a href="/programdetail" class="btn btn-primary rounded-pill bg-danger"
-                    >Detail Pogram</a
-                  >
-                </div>
-              </div>
-            </div>
+          @endforeach
           </div>
         </div>
         <!-- .container -->

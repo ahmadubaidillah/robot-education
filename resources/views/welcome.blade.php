@@ -30,7 +30,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light navbar-float">
         <div class="container">
-          <a href="/" class="navbar-brand w-50"
+          <a href="/" class="navbar-brand "
             ><img src="{{asset('front-end/assets/img/Capture.PNG')}}" alt="" class="w-25"
           /></a>
 
@@ -71,7 +71,7 @@
             </ul>
 
             <div class="ml-auto">
-              <a href="#" class="btn btn-primary rounded-pill bg-danger"
+              <a href="/login" class="btn btn-primary rounded-pill bg-danger"
                 >Login</a
               >
             </div>
@@ -87,12 +87,9 @@
                 Let's Play, Learn & Compete With Robot Education
               </h1>
               <p class="text-lg mb-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Repellendus tempora debitis distinctio porro, nisi quos?
-                Doloremque praesentium est, temporibus dolor atque iste
-                accusamus fugit blanditiis ea maiores dolore quas eligendi!
+                Mari belajar dan kembangkan minatmu dibidang robotika bersama kami
               </p>
-              <a href="#" class="btn btn-primary bg-danger">Join Us Now !</a>
+              <a href="/program" class="btn btn-primary bg-danger">Join Us Now !</a>
             </div>
             <div class="col-lg-6 py-3 wow zoomIn">
               <div class="img-place">
@@ -126,7 +123,7 @@
                 Training Robotika dan Jasa Konsultasi serta Pembuatan Solusi
                 Teknis di Bidang Elektronika.
               </p>
-              <a href="#" class="btn btn-primary bg-danger">More Details</a>
+              <a href="/about" class="btn btn-primary bg-danger">More Details</a>
             </div>
           </div>
           <!-- .container -->
@@ -140,15 +137,13 @@
             <div class="row">
               <div class="col-lg-6 py-3 wow fadeInLeft">
                 <h2 class="title-section">
-                  we're <span class="marked">ready to</span> Teach you with best
+                  We're <span class="marked">Ready to</span> Teach You with best
                 </h2>
                 <div class="divider"></div>
                 <p class="mb-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  id provident omnis sed dignissimos, commodi molestias nobis
-                  nulla quasi optio at earum eligendi. Laudantium temporibus
-                  saepe non rerum itaque reiciendis.
-                </p>              <a href="#" class="btn btn-primary bg-danger">More Details</a>
+                  Kami menyediakan beberapa program belajar, workshop training, serta menjual product seputar Elektronika dan Robotika
+                </p>              
+                <a href="/program" class="btn btn-primary bg-danger">More Details</a>
 
               </div>
               <div class="col-lg-6 py-3 wow zoomIn">

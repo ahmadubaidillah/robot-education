@@ -94,14 +94,14 @@
         <div class="row align-items-center">
           <div class="col-lg-6 py-3">
             <div class="img-fluid text-center">
-              <img src="{{asset('front-end/assets/img/IMG_8387.JPG')}}" alt="" class="w-75" style="border-radius: 10px;">
+              <img src="{{asset('fotoprogram/'.$data->foto)}}" alt="" class="w-75" style="border-radius: 10px;">
             </div>
           </div>
           <div class="col-lg-6 py-3 pr-lg-5">
-            <h2 class="title-section">Workshop <span class="marked">Robotika</span> </h2>
+            <h2 class="title-section">{{$data->nama}}</h2>
             <div class="divider"></div>
-            <p>Sebuah program workshop belajar/training yang mengajar tentang robotika</p>      
-              <p>Harga : Rp. 500.000</p>
+            <p>{{$data->deskripsi}}</p>      
+              <p>Harga : Rp. {{$data->harga}}</p>
             <a href="/contact" class="btn btn-danger">Daftar Program</a>
           </div>
         </div>

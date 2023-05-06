@@ -92,166 +92,31 @@
     <div class="page-section">
       <div class="container">
         <div class="row">
+          @foreach ($data as $row)
           <div class="col-md-6 col-lg-4 py-3">
             <div class="card-blog">
             <div class="header">
                   <div class="avatar">
-                    <img src="{{asset('front-end/assets/img/person/person_1.jpg')}}" alt="" />
+                    <img src="{{asset('fototestimoni/'.$row->foto)}}" alt="" />
                   </div>
                   <div class="entry-footer">
-                    <div class="post-author mt-2">Suep</div>
+                    <div class="post-author mt-2">{{$row->nama}}</div>
                   </div>
                 </div>
                 <div class="body">
-                  <div class="post-title">Cara mengajarnya asik dan mudah dipahami
+                  <div class="post-title">{{$row->testimoni}}
                   </div>
                 </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 py-3">
-            <div class="card-blog">
-            <div class="header">
-                  <div class="avatar">
-                    <img src="{{asset('front-end/assets/img/person/person_2.jpg')}}" alt="" />
-                  </div>
-                  <div class="entry-footer">
-                    <div class="post-author mt-2">Paijo</div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="post-title">Jasa konsultasi sangat membantu saya
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 py-3">
-            <div class="card-blog">
-            <div class="header">
-                  <div class="avatar">
-                    <img src="{{asset('front-end/assets/img/person/person_3.jpg')}}" alt="" />
-                  </div>
-                  <div class="entry-footer">
-                    <div class="post-author mt-2">Painem</div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="post-title">Sangat mudah dipahami untuk yang masih pemula
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 py-3">
-            <div class="card-blog">
-            <div class="header">
-                  <div class="avatar">
-                    <img src="{{asset('front-end/assets/img/person/person_1.jpg')}}" alt="" />
-                  </div>
-                  <div class="entry-footer">
-                    <div class="post-author mt-2">Suep</div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="post-title">Cara mengajarnya asik dan mudah dipahami
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 py-3">
-            <div class="card-blog">
-            <div class="header">
-                  <div class="avatar">
-                    <img src="{{asset('front-end/assets/img/person/person_2.jpg')}}" alt="" />
-                  </div>
-                  <div class="entry-footer">
-                    <div class="post-author mt-2">Paijo</div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="post-title">Jasa konsultasi sangat membantu saya
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 py-3">
-            <div class="card-blog">
-            <div class="header">
-                  <div class="avatar">
-                    <img src="{{asset('front-end/assets/img/person/person_3.jpg')}}" alt="" />
-                  </div>
-                  <div class="entry-footer">
-                    <div class="post-author mt-2">Painem</div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="post-title">Sangat mudah dipahami untuk yang masih pemula
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 py-3">
-            <div class="card-blog">
-            <div class="header">
-                  <div class="avatar">
-                    <img src="{{asset('front-end/assets/img/person/person_1.jpg')}}" alt="" />
-                  </div>
-                  <div class="entry-footer">
-                    <div class="post-author mt-2">Suep</div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="post-title">Cara mengajarnya asik dan mudah dipahami
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 py-3">
-            <div class="card-blog">
-            <div class="header">
-                  <div class="avatar">
-                    <img src="{{asset('front-end/assets/img/person/person_2.jpg')}}" alt="" />
-                  </div>
-                  <div class="entry-footer">
-                    <div class="post-author mt-2">Paijo</div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="post-title">Jasa konsultasi sangat membantu saya
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 py-3">
-            <div class="card-blog">
-            <div class="header">
-                  <div class="avatar">
-                    <img src="{{asset('front-end/assets/img/person/person_3.jpg')}}" alt="" />
-                  </div>
-                  <div class="entry-footer">
-                    <div class="post-author mt-2">Painem</div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="post-title">Sangat mudah dipahami untuk yang masih pemula
-                  </div>
-                </div>
-            </div>
-          </div>
-        
+          @endforeach
+
 
           <div class="col-12 mt-5">
             <nav aria-label="Page Navigation">
               <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
+              {{$data->links()}}
+
               </ul>
             </nav>
           </div>

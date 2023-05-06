@@ -77,7 +77,7 @@
           <div class="col-md-6">
             <nav aria-label="Breadcrumb">
               <ul class="breadcrumb justify-content-center py-0 bg-transparent">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
                 <li class="breadcrumb-item active">Portofolio</li>
               </ul>
             </nav>
@@ -93,43 +93,22 @@
       <div class="container">
         <nav aria-label="Breadcrumb">
           <ul class="breadcrumb p-0 mb-0 bg-transparent">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="/portofolio">Portofolio</a></li>
             <li class="breadcrumb-item active">Detail Portofolio</li>
           </ul>
         </nav>
         
-        <div class="row justify-content-center">
+        <div class="row justify-content-center text-center">
           <div class="col-lg-9">
             <div class="blog-single-wrap">
-                  <img src="{{asset('front-end/assets/img/1st.jpg')}}" alt="" class="w-75 mb-3 " style="border-radius:20px">
-              <h1 class="post-title mt-5">First Winner Robo Tracer Open
-RBTX 2022 - Petrosains x Ministry of Education, Malaysia</h1>
-              <div class="post-meta">
-                <div class="post-date">
-                  <span class="icon">
-                    <span class="mai-time-outline"></span>
-                  </span> <a href="#">2022</a>
-                </div>
-                <div class="post-comment-count ml-2">
-                  <span class="icon">
-                    <span class="mai-chatbubbles-outline"></span>
-                  </span> <a href="#">4 Comments</a>
-                </div>
-              </div>
-              <div class="post-content">
-                <p>The Petrosains RBTX Challenge is an event for all robotics enthusiasts to come together to compete and contest their robotic creations in an open source software environment (petrosains.com). One of the Indonesian delegates, came from Robot Education Indonesia! Massive congratulations on your achievements guys!</p>
-                <p>Team : NB Team</p>
-                <p>Achievement : First Winner Robo Tracer Open
-RBTX 2022 - Petrosains x Ministry of Education, Malaysia</p>
-                <p>Team member:
-- Rauzan Baldric Rakaputra
-- Reyhan Nino Aliffano
-- Zukruf Kurnia Firmansyah</p>
-                <p>School : SMA Negeri 6 Surabaya x SMA Negeri 20 Surabaya x PENS EEPIS</p>
-                <p>trained by : @roboteducation.id</p>
-                <blockquote class="quote">“Becoming number one is easier than remaining number one.”
-                <span class="author">— Bill Bradley</span></blockquote>
+                  <img src="{{asset('fotoportofolio/'.$data->foto)}}" alt="" class="w-75 mb-3 " style="border-radius:20px">
+              <h1 class="post-title mt-5">{{$data->nama}}</h1>
+            
+              <div class="post-content mt-5">
+                <p>{{$data->deskripsi}}</p>
+                <blockquote class="quote mt-5" >“{{$data->quote}}.”
+                <span class="author">— {{$data->penulis}}</span></blockquote>
               </div>
             </div>
   

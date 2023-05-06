@@ -94,15 +94,15 @@
         <div class="row align-items-center">
           <div class="col-lg-6 py-3">
             <div class="img-fluid text-center">
-              <img src="{{asset('front-end/assets/img/konveyor.JPG')}}" alt="" class="w-75" style="border-radius: 10px;">
+              <img src="{{asset('fotoproductss/'.$data->foto)}}" alt="" class="w-75" style="border-radius: 10px;">
             </div>
           </div>
           <div class="col-lg-6 py-3 pr-lg-5">
-            <h2 class="title-section">Konveyor Mini Arduino PLC</h2>
+            <h2 class="title-section">{{$data->nama}}</h2>
             <div class="divider"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ducimus deleniti quo</p>      
-              <p>Harga : Rp. 1.500.000</p>
-            <a href="https://www.tokopedia.com/roboteducation/konveyor-mini-arduino-plc?extParam=whid%3D13760579" class="btn btn-danger">Pesan Product</a>
+            <p>{{$data->deskripsi}}</p>      
+              <p>Harga : Rp. {{$data->harga}}</p>
+            <a href="{{$data->link}}" class="btn btn-danger">Pesan Product</a>
           </div>
         </div>
       </div> <!-- .container -->

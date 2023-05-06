@@ -93,229 +93,36 @@
         <div class="container">
 
           <div class="row justify-content-center">
-            
+          @foreach ($data as $row)
             <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
               <div class="card-pricing">
                 <div class="header">
                   <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
                   <img
-                    src="{{asset('front-end/assets/img/2nd.JPG')}}"
+                    src="{{asset('fotoportofolio/'.$row->foto)}}"
                     alt=""
                     class="w-75 mb-3"
                     style="border-radius: 20px"
                   />
-                  <div class="text-dark" style="text-transform: uppercase;letter-spacing: 1px">2ND WINNER</div>
+                  <div class="text-dark" style="text-transform: uppercase;letter-spacing: 1px">{{$row->judul}}</div>
                 </div>
                 <div class="body py-3">
                   <div class="price-info">
-                    <p>Juara 2 Line Follower Microcontroller, Technowars 10 UNIKAMA 2022</p>
+                    <p>{{$row->nama}}</p>
                   </div>
                 </div>
                 <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
+                <a href="/portofoliodetail/{{$row->id}}">Read More <span class="mai-chevron-forward text-sm"></span></a>
 
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
-                  <img
-                    src="{{asset('front-end/assets/img/1st.JPG')}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="text-dark" style="text-transform: uppercase;letter-spacing: 1px">1ST WINNER</div>
-                </div>
-                <div class="body py-3">
-                  <div class="price-info">
-                    <p>First Winner Robo Tracer Open
-                    RBTX 2022 - Petrosains x Ministry of Education, Malaysia</p>
-                  </div>
-                </div>
-                <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
-                  <img
-                    src="{{asset('front-end/assets/img/st1.JPG')}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="text-dark" style="text-transform: uppercase;letter-spacing: 1px">1st WINNER</div>
-                </div>
-                <div class="body py-3">
-                  <div class="price-info">
-                    <p>Juara 1 Line Maze Challenge Senior, Airofest UNAIR 20222</p>
-                  </div>
-                </div>
-                <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
-                  <img
-                    src="{{asset('front-end/assets/img/2nd.JPG')}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="text-dark" style="text-transform: uppercase;letter-spacing: 1px">2ND WINNER</div>
-                </div>
-                <div class="body py-3">
-                  <div class="price-info">
-                    <p>Juara 2 Line Follower Microcontroller, Technowars 10 UNIKAMA 2022</p>
-                  </div>
-                </div>
-                <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
-                  <img
-                    src="{{asset('front-end/assets/img/1st.JPG')}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="text-dark" style="text-transform: uppercase;letter-spacing: 1px">1ST WINNER</div>
-                </div>
-                <div class="body py-3">
-                  <div class="price-info">
-                    <p>First Winner Robo Tracer Open
-                    RBTX 2022 - Petrosains x Ministry of Education, Malaysia</p>
-                  </div>
-                </div>
-                <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
-                  <img
-                    src="{{asset('front-end/assets/img/st1.JPG')}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="text-dark" style="text-transform: uppercase;letter-spacing: 1px">1st WINNER</div>
-                </div>
-                <div class="body py-3">
-                  <div class="price-info">
-                    <p>Juara 1 Line Maze Challenge Senior, Airofest UNAIR 20222</p>
-                  </div>
-                </div>
-                <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
-                  <img
-                    src="{{asset('front-end/assets/img/2nd.JPG')}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="text-dark" style="text-transform: uppercase;letter-spacing: 1px">2ND WINNER</div>
-                </div>
-                <div class="body py-3">
-                  <div class="price-info">
-                    <p>Juara 2 Line Follower Microcontroller, Technowars 10 UNIKAMA 2022</p>
-                  </div>
-                </div>
-                <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
-                  <img
-                    src="{{asset('front-end/assets/img/1st.JPG')}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="text-dark" style="text-transform: uppercase;letter-spacing: 1px">1ST WINNER</div>
-                </div>
-                <div class="body py-3">
-                  <div class="price-info">
-                    <p>First Winner Robo Tracer Open
-                    RBTX 2022 - Petrosains x Ministry of Education, Malaysia</p>
-                  </div>
-                </div>
-                <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <!-- <div class="price-icon"><span class="mai-people"></span></div> -->
-                  <img
-                    src="{{asset('front-end/assets/img/st1.JPG')}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="text-dark" style="text-transform: uppercase;letter-spacing: 1px">1st WINNER</div>
-                </div>
-                <div class="body py-3">
-                  <div class="price-info">
-                    <p>Juara 1 Line Maze Challenge Senior, Airofest UNAIR 20222</p>
-                  </div>
-                </div>
-                <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 mt-5">
+          @endforeach
+          <div class="col-12 mt-5">
             <nav aria-label="Page Navigation">
               <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
+              {{$data->links()}}
+
               </ul>
             </nav>
           </div>

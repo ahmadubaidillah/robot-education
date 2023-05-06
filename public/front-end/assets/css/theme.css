@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-    color: #5641df;
+    color: #d6060a !important;
     text-decoration: underline;
 }
 
@@ -1308,7 +1308,7 @@ a.text-dark:focus {
     box-shadow: none;
 }
 
-.page-item.active .page-link {
+/* .page-item.active .page-link {
     z-index: 3;
     color: #fff;
     background-color: #d6060a;
@@ -1353,7 +1353,7 @@ a.text-dark:focus {
 .pagination-sm .page-item:last-child .page-link {
     border-top-right-radius: 0.2rem;
     border-bottom-right-radius: 0.2rem;
-}
+} */
 
 .img-place {
     position: relative;

@@ -124,23 +124,32 @@
               <h2 class="title-section">Drop Us a Line</h2>
               <div class="divider"></div>
 
-              <form action="#">
+              <form action="/insertcontact" method="POST" enctype="multipart/form-data">
+              @csrf
                 <div class="py-2">
                   <input
                     type="text"
+                    name="nama"
                     class="form-control"
-                    placeholder="Full name"
+                    placeholder="Name"
                   />
                 </div>
                 <div class="py-2">
-                  <input type="text" class="form-control" placeholder="Email" />
+                  <input type="text" name="telepon" class="form-control" placeholder="No Telephone" />
                 </div>
                 <div class="py-2">
-                  <textarea
+                  <input type="text" name="email" class="form-control" placeholder="Email" />
+                </div>
+                <div class="py-2">
+                  <input
+                    type="text"
+                    name="message"
                     rows="6"
-                    class="form-control"
+                    class="form-control " 
+    
+                    style="height:150px"
                     placeholder="Enter message"
-                  ></textarea>
+                  ></input>
                 </div>
                 <button type="submit" class="btn btn-primary bg-danger mt-4">
                   Send Message

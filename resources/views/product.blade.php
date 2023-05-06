@@ -92,74 +92,30 @@
     <div class="page-section">
       <div class="container">
         <div class="row">
+        @foreach ($data as $row)
           <div class="col-md-6 col-lg-4 py-3">
-            <a href="/productdetail" class="text-dark" style="text-decoration:none">
+            <a href="/productdetail/{{$row->id}}" class="text-dark" style="text-decoration:none">
             <div class="card-blog">
               <div class="header">
-                    <img src="{{asset('front-end/assets/img/arduino.jpg')}}" alt="" class="w-75 mx-auto" style="border-radius:10px"/>
+                    <img src="{{asset('fotoproduct/'.$row->foto)}}" alt="" class="w-75 mx-auto" style="border-radius:10px"/>
                 </div>
                 <div class="body">
-                  <div class="post-title">Holder Arduino Uno - Frame Arduino Uno 3D Print
+                  <div class="post-title">{{$row->nama}}
                   </div>
                 </div>
                 <div class="footer">
-                  <div class="post-title">Rp. 10.000
+                  <div class="post-title">Rp. {{$row->harga}}
                   </div>
               </div>
             </div>
             </a>
           </div>
-          <div class="col-md-6 col-lg-4 py-3">
-          <a href="/productdetail" class="text-dark" style="text-decoration:none">
-            <div class="card-blog">
-              <div class="header">
-                    <img src="{{asset('front-end/assets/img/casing.jpg')}}" alt="" class="w-75 mx-auto" style="border-radius:10px"/>
-                </div>
-                <div class="body">
-                  <div class="post-title">Casing Sensor PIR / Chasing Box PIR Medium 3D Print
-                  </div>
-                </div>
-                <div class="footer">
-                  <div class="post-title">Rp. 13.000
-                  </div>
-              </div>
-            </div>
-          </a>
-          </div>
-          <div class="col-md-6 col-lg-4 py-3">
-          <a href="/productdetail" class="text-dark" style="text-decoration:none">
-            <div class="card-blog">
-              <div class="header">
-                    <img src="{{asset('front-end/assets/img/konveyor.jpg')}}" alt="" class="w-75 mx-auto" style="border-radius:10px"/>
-                </div>
-                <div class="body">
-                  <div class="post-title">Konveyor Mini Arduino PLC
-                  </div>
-                </div>
-                <div class="footer">
-                  <div class="post-title">Rp. 1.500.000
-                  </div>
-              </div>
-            </div>
-          </a>  
-          </div>
-
-
-
+        @endforeach
           <div class="col-12 mt-5">
             <nav aria-label="Page Navigation">
               <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
+              {{$data->links()}}
+
               </ul>
             </nav>
           </div>
