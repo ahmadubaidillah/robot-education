@@ -22,6 +22,8 @@
     />
 
     <link rel="stylesheet" href="{{asset('front-end/assets/css/theme.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  
   </head>
   <body>
     <!-- Back to top button -->
@@ -31,7 +33,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
       <a href="/" class="navbar-brand w-50"
-            ><img src="{{asset('front-end/assets/img/Capture.PNG')}}" alt="" class="w-25"
+      ><img src="{{asset('front-end/assets/img/Logo Besar - robot education.png')}}" alt="" class="w-50"
           /></a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +65,7 @@
           </ul>
 
           <div class="ml-auto">
-              <a href="#" class="btn btn-primary rounded-pill bg-danger"
+              <a href="/login" class="btn btn-primary rounded-pill bg-danger"
                 >Login</a
               >
             </div>
@@ -87,6 +89,10 @@
       </div>
     </div>
   </header>
+
+    <a href="https://api.whatsapp.com/send/?phone=6281331102622&text&type=phone_number&app_absent=0" class="floating" target="_blank">
+      <i class="fab fa-whatsapp fab-icon"></i>
+    </a>
 
    <main>
    <div class="page-section border-top">
@@ -115,7 +121,7 @@
                   <div class="icon">
                     <span class="mai-phone-portrait"></span>
                   </div>
-                  <div class="content"><a href="#">+62XXXXXXXXXX</a></div>
+                  <div class="content"><a href="https://api.whatsapp.com/send/?phone=6281331102622&text&type=phone_number&app_absent=0">+62 813-3110-2622</a></div>
                 </li>
               </ul>
             </div>
@@ -135,7 +141,7 @@
                   />
                 </div>
                 <div class="py-2">
-                  <input type="text" name="telepon" class="form-control" placeholder="No Telephone" />
+                  <input type="text" name="telepon" class="form-control" placeholder="Phone" />
                 </div>
                 <div class="py-2">
                   <input type="text" name="email" class="form-control" placeholder="Email" />
@@ -161,7 +167,7 @@
         <!-- .container -->
       </div>
   </main>
-    <footer
+  <footer
       class="page-footer btn-primary"
       style="
         background-image: linear-gradient(
@@ -176,27 +182,27 @@
           <div class="col-lg-4 py-4">
             <h5>Quick Links</h5>
             <ul class="footer-menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Portofolio</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/program">Programs</a></li>
+              <li><a href="/portofolio">Portofolio</a></li>
             </ul>
           </div>
           <div class="col-lg-4 py-4">
             <h5>About Us</h5>
             <ul class="footer-menu">
-              <li><a href="#">About Us</a></li>
+              <li><a href="/about">About Us</a></li>
               <li><a href="#">Our Teams</a></li>
-              <li><a href="#">Testimonials</a></li>
+              <li><a href="/testimoni">Testimonials</a></li>
             </ul>
           </div>
           <div class="col-lg-4 py-4">
             <h5>Our Social Media</h5>
 
             <div class="sosmed-button mt-4">
-              <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-instagram"></span></a>
-              <a href="#"><span class="mai-logo-linkedin"></span></a>
+              <a href="https://www.facebook.com/roboteducation.id/"><span class="mai-logo-facebook-f"></span></a>
+              <a href="https://api.whatsapp.com/send/?phone=6281331102622&text&type=phone_number&app_absent=0"><span class="mai-logo-whatsapp"></span></a>
+              <a href="https://www.instagram.com/roboteducation.id/"><span class="mai-logo-instagram"></span></a>
+              <a href="https://www.tokopedia.com/roboteducation"><span class="mai-home"></span></a>
             </div>
           </div>
         </div>
@@ -204,12 +210,12 @@
         <div class="row">
           <div class="col-sm-6 py-2">
             <p id="copyright">
-              &copy; 2023 Mas <a href="https://macodeid.com/">Ubed</a>
+              &copy; 2023  Robot <a href="/">Education</a>
             </p>
           </div>
           <div class="col-sm-6 py-2 text-right">
             <div class="d-inline-block px-3">
-              <a href="#">Contact Us</a>
+              <a href="/contact">Contact Us</a>
             </div>
           </div>
         </div>

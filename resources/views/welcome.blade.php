@@ -22,38 +22,33 @@
     />
 
     <link rel="stylesheet" href="{{asset('front-end/assets/css/theme.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   </head>
   <body>
     <!-- Back to top button -->
     <div class="back-to-top"></div>
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light navbar-float">
-        <div class="container">
-          <a href="/" class="navbar-brand "
-            ><img src="{{asset('front-end/assets/img/Capture.PNG')}}" alt="" class="w-25"
+    <!-- fixed-top -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm ">
+      <div class="container">
+      <a href="/" class="navbar-brand w-50"
+            ><img src="{{asset('front-end/assets/img/Logo Besar - robot education.png')}}" alt="" class="w-50"
           /></a>
 
-          <button
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#navbarContent"
-            aria-controls="navbarContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="navbar-collapse collapse" id="navbarContent">
-            <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
-              <li class="nav-item active">
-                <a href="/" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="/about" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
+            <li class="nav-item">
+              <a href="/" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item ">
+              <a href="/about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
                 <a href="/program" class="nav-link">Programs</a>
               </li>
               <li class="nav-item">
@@ -61,25 +56,24 @@
               </li>
               <li class="nav-item">
                 <a href="/portofolio" class="nav-link">Portofolio</a>
-              </li>
-              <li class="nav-item">
-              <a href="/testimoni" class="nav-link">Testimonials</a>
-              </li>
-              <li class="nav-item">
-                <a href="/contact" class="nav-link">Contact</a>
-              </li>
-            </ul>
+            <li class="nav-item">
+            <a href="/testimoni" class="nav-link">Testimonials</a>
+            </li>
+            <li class="nav-item ">
+              <a href="/contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
 
-            <div class="ml-auto">
+          <div class="ml-auto">
               <a href="/login" class="btn btn-primary rounded-pill bg-danger"
                 >Login</a
               >
             </div>
           </div>
         </div>
-      </nav>
+    </nav>
 
-      <div class="page-banner home-banner mt-lg-5 mb-md-5">
+      <div class="page-banner home-banner  mb-md-5 ">
         <div class="container h-100 ">
           <div class="row align-items-center h-100 ">
             <div class="col-lg-6 py-3 wow fadeInUp">
@@ -89,7 +83,7 @@
               <p class="text-lg mb-5">
                 Mari belajar dan kembangkan minatmu dibidang robotika bersama kami
               </p>
-              <a href="/program" class="btn btn-primary bg-danger">Join Us Now !</a>
+              <a href="/contact" class="btn btn-primary bg-danger">Join Us Now !</a>
             </div>
             <div class="col-lg-6 py-3 wow zoomIn">
               <div class="img-place">
@@ -101,6 +95,11 @@
       </div>
     </header>
     <div class="border-top mb-md-5" ></div>
+    
+    <a href="https://api.whatsapp.com/send/?phone=6281331102622&text&type=phone_number&app_absent=0" class="floating" target="_blank">
+      <i class="fab fa-whatsapp fab-icon"></i>
+    </a>
+
     <main>
       <!-- .page-section -->
       
@@ -110,7 +109,7 @@
           <div class="row">
             <div class="col-lg-6 py-3 wow zoomIn">
               <div class="img-place text-center">
-                <img src="{{asset('front-end/assets/img/19199085.jpg')}}" alt="" />
+              <img src="{{asset('front-end/assets/img/10782528_19198406.jpg')}}" alt="" />
               </div>
             </div>
             <div class="col-lg-6 py-3 wow fadeInRight">
@@ -132,7 +131,7 @@
 
         <!-- .page-section -->
 
-        <div class="page-section mt-5 border-top">
+        <!-- <div class="page-section mt-5 border-top">
           <div class="container">
             <div class="row">
               <div class="col-lg-6 py-3 wow fadeInLeft">
@@ -148,13 +147,12 @@
               </div>
               <div class="col-lg-6 py-3 wow zoomIn">
                 <div class="img-place text-center">
-                  <img src="{{asset('front-end/assets/img/10782528_19198406.jpg')}}" alt="" />
                 </div>
               </div>
             </div>
           </div>
           <!-- .container -->
-        </div>
+        </div> -->
         <!-- .page-section -->
 
         <div class="page-section">
@@ -268,7 +266,6 @@
                   </div>
                 </div>
                 <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
 
                 </div>
               </div>
@@ -292,7 +289,6 @@
                   </div>
                 </div>
                 <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
 
                 </div>
               </div>
@@ -311,13 +307,16 @@
                 </div>
                 <div class="body py-3">
                   <div class="price-info">
-                    <p>Juara 1 Line Maze Challenge Senior, Airofest UNAIR 20222</p>
+                    <p>Juara 1 Line Maze Challenge Senior, Airofest UNAIR 2022</p>
+                    <br>
                   </div>
                 </div>
                 <div class="footer">
-                <a href="/portofoliodetail">Read More <span class="mai-chevron-forward text-sm"></span></a>
                 </div>
               </div>
+            </div>
+            <div class="text-center mt-5">
+             <a href="/portofolio" class="btn btn-primary bg-danger">More Portofolio</a>
             </div>
           </div>
         </div>
@@ -406,7 +405,7 @@
           </div>
 
           <div class="text-center">
-            <a href="#" class="btn btn-primary bg-danger">More Testimonial</a>
+            <a href="/testimoni" class="btn btn-primary bg-danger">More Testimonial</a>
           </div>
         </div>
         <!-- .container -->
@@ -435,27 +434,27 @@
           <div class="col-lg-4 py-4">
             <h5>Quick Links</h5>
             <ul class="footer-menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Portofolio</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/program">Programs</a></li>
+              <li><a href="/portofolio">Portofolio</a></li>
             </ul>
           </div>
           <div class="col-lg-4 py-4">
             <h5>About Us</h5>
             <ul class="footer-menu">
-              <li><a href="#">About Us</a></li>
+              <li><a href="/about">About Us</a></li>
               <li><a href="#">Our Teams</a></li>
-              <li><a href="#">Testimonials</a></li>
+              <li><a href="/testimoni">Testimonials</a></li>
             </ul>
           </div>
           <div class="col-lg-4 py-4">
             <h5>Our Social Media</h5>
 
             <div class="sosmed-button mt-4">
-              <a href="#"><span class="mai-logo-facebook-f"></span></a>
-              <a href="#"><span class="mai-logo-twitter"></span></a>
-              <a href="#"><span class="mai-logo-instagram"></span></a>
-              <a href="#"><span class="mai-logo-linkedin"></span></a>
+              <a href="https://www.facebook.com/roboteducation.id/"><span class="mai-logo-facebook-f"></span></a>
+              <a href="https://api.whatsapp.com/send/?phone=6281331102622&text&type=phone_number&app_absent=0"><span class="mai-logo-whatsapp"></span></a>
+              <a href="https://www.instagram.com/roboteducation.id/"><span class="mai-logo-instagram"></span></a>
+              <a href="https://www.tokopedia.com/roboteducation"><span class="mai-home"></span></a>
             </div>
           </div>
         </div>
@@ -463,12 +462,12 @@
         <div class="row">
           <div class="col-sm-6 py-2">
             <p id="copyright">
-              &copy; 2023 Mas <a href="https://macodeid.com/">Ubed</a>
+              &copy; 2023  Robot <a href="/">Education</a>
             </p>
           </div>
           <div class="col-sm-6 py-2 text-right">
             <div class="d-inline-block px-3">
-              <a href="#">Contact Us</a>
+              <a href="/contact">Contact Us</a>
             </div>
           </div>
         </div>

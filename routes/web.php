@@ -6,6 +6,7 @@ use App\Http\Controllers\PortofolioController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -79,3 +80,9 @@ Route::get('/login', function () {
 Route::get('/adminpanel', function () {
     return view('adminpanel');
 });
+
+// Login 
+Route::get('/login',[LoginController::class, 'index'])->name('login');
+Route::post('/loginproses',[LoginController::class, 'loginproses'])->name('loginproses');
+
+Route::get('/logout',[LoginController::class, 'logout'])->name('logout');

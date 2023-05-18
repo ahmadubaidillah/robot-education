@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard 2</title>
+  <title>Robot Education</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -33,7 +33,14 @@
         <a href="index3.html" class="nav-link">Home</a>
       </li>
     </ul>
-
+ <!-- Right navbar links -->
+ <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" href="/logout" >
+          Logout
+        </a>
+      </li>
   </nav>
   <!-- /.navbar -->
 
