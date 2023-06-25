@@ -64,7 +64,7 @@ class TestimoniController extends Controller
         //     $data = Testimoni::where('nama','LIKE','%'.$request->search.'%')
         //     ->orwhere('testimoni','LIKE','%'.$request->search.'%')->paginate(9);
         // }else{
-            $data = Testimoni::simplePaginate(2);
+            $data = Testimoni::simplePaginate(9);
         // }
         return view('testimoni',compact('data'));
      }

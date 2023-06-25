@@ -66,7 +66,7 @@ class PortofolioController extends Controller
         //     $data = portofolio::where('nama','LIKE','%'.$request->search.'%')
         //     ->orwhere('portofolio','LIKE','%'.$request->search.'%')->paginate(9);
         // }else{
-            $data = Portofolio::simplePaginate(2);
+            $data = Portofolio::simplePaginate(9);
         // }
         return view('portofolio',compact('data'));
      }

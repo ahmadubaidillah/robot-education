@@ -64,7 +64,7 @@ class ProgramController extends Controller
         //     $data = program::where('nama','LIKE','%'.$request->search.'%')
         //     ->orwhere('program','LIKE','%'.$request->search.'%')->paginate(9);
         // }else{
-            $data = Program::simplePaginate(2);
+            $data = Program::simplePaginate(9);
         // }
         return view('program',compact('data'));
      }

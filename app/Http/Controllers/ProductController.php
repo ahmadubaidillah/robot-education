@@ -16,9 +16,9 @@ class ProductController extends Controller
 
         if($request->has('search')){
             $data = Product::where('nama','LIKE','%'.$request->search.'%')
-            ->orwhere('deskripsi','LIKE','%'.$request->search.'%')->paginate(5);
+            ->orwhere('deskripsi','LIKE','%'.$request->search.'%')->paginate(9);
         }else{
-            $data = Product::simplePaginate(2);
+            $data = Product::simplePaginate(9);
         }
         return view('dataproduct',compact('data'));
     }
@@ -65,7 +65,7 @@ class ProductController extends Controller
         //     $data = product::where('nama','LIKE','%'.$request->search.'%')
         //     ->orwhere('product','LIKE','%'.$request->search.'%')->paginate(9);
         // }else{
-            $data = Product::simplePaginate(2);
+            $data = Product::simplePaginate(9);
         // }
         return view('product',compact('data'));
      }

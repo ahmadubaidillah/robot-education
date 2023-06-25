@@ -99,31 +99,36 @@
         <div class="container">
 
           <div class="row justify-content-center">
-          @foreach ($data as $row)
-            <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-              <div class="card-pricing">
-                <div class="header">
-                  <img
-                    src="{{asset('fotoprogram/'.$row->foto)}}"
-                    alt=""
-                    class="w-75 mb-3"
-                    style="border-radius: 20px"
-                  />
-                  <div class="price-title text-dark mt-5 mb-5">{{$row->nama}}</div>
-                </div>
-                <!-- <div class="body py-3">
-                  <div class="price-info">
-                    <p>Program Kelas Private Belajar Robotika</p>
+            @foreach ($data as $row)
+              <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
+                <div class="card-pricing">
+                  <div class="header">
+                    <img
+                      src="{{asset('fotoprogram/'.$row->foto)}}"
+                      alt=""
+                      class="w-75 mb-3"
+                      style="border-radius: 20px"
+                    />
+                    <div class="price-title text-dark mt-5 mb-5">{{$row->nama}}</div>
                   </div>
-                </div> -->
-                <div class="footer">
-                  <a href="/programdetail/{{$row->id}}" class="btn btn-primary rounded-pill bg-danger"
-                    >Detail Pogram</a
-                  >
+                  <div class="footer">
+                    <a href="/programdetail/{{$row->id}}" class="btn btn-primary rounded-pill bg-danger"
+                      >Detail Pogram</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
-          @endforeach
+            @endforeach
+
+          
+          </div>
+          <div class="col-12 mt-5">
+            <nav aria-label="Page Navigation">
+              <ul class="pagination justify-content-center">
+              {{$data->links()}}
+
+              </ul>
+            </nav>
           </div>
         </div>
         <!-- .container -->
