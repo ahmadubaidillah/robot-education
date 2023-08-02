@@ -52,7 +52,7 @@
                 <a href="/program" class="nav-link">Programs</a>
               </li>
               <li class="nav-item">
-                <a href="/product" class="nav-link">Products</a>
+                <a href="/product" class="nav-link">Solutions</a>
               </li>
               <li class="nav-item active">
                 <a href="/portofolio" class="nav-link">Portofolio</a>

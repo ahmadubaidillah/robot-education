@@ -52,7 +52,7 @@
                 <a href="/program" class="nav-link">Programs</a>
               </li>
               <li class="nav-item">
-                <a href="/product" class="nav-link">Products</a>
+                <a href="/product" class="nav-link">Solutions</a>
               </li>
               <li class="nav-item">
                 <a href="/portofolio" class="nav-link">Portofolio</a>
@@ -151,16 +151,17 @@
               </div>
             </div>
           </div>
-          <!-- .container -->
-        </div> -->
+          .container -->
+        <!-- </div> -->
         <!-- .page-section -->
 
         <div class="page-section">
           <div class="container">
             <div class="text-center wow fadeInUp">
-              <div class="subhead">Our Programs</div>
+              <!-- <div class="subhead">Our Product and Service</div> -->
               <h2 class="title-section">
-                Let's <span class="marked">Learn</span> With Us
+                Our<span class="marked"> Product </span>and <span class="marked">Service</span>
+                <!-- Let's <span class="marked">Learn</span> With Us -->
               </h2>
               <div class="divider mx-auto"></div>
             </div>
@@ -169,10 +170,9 @@
               <div class="col-lg-4 py-3 wow fadeInUp">
                 <!-- <div class="display-3"><span class="mai-shapes"></span></div> -->
                 <img src="{{asset('front-end/assets/img/robot.png')}}" alt="" class="w-25 mb-3" />
-                <h5>Jasa Training Robotika</h5>
+                <h5>Robot Education</h5>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum, sit.
+                  Penyedia jasa Training Robotika untuk pelajar usia TK, hingga PT, dan Umum
                 </p>
               </div>
               <div class="col-lg-4 py-3 wow fadeInUp">
@@ -182,25 +182,37 @@
                   alt=""
                   class="w-25 mb-3"
                 />
-                <h5>jasa Konsultasi Di Bidang Elektronika</h5>
+                <h5>RE Solution</h5>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum, sit.
+                Penyedia jasa konsultasi dan pembuatan
+solusi teknis di bidang elektronika dan
+robotika
                 </p>
               </div>
-              <div class="col-lg-4 py-3 wow fadeInUp">
+                <div class="col-lg-4 py-3 wow fadeInUp">
                 <!-- <div class="display-3"><span class="mai-shapes"></span></div> -->
+                <img
+                  src="{{asset('front-end/assets/img/technology-products.png')}}"
+                  alt=""
+                  class="w-25 mb-3"
+                />
+                <h5>RE Store</h5>
+                <p>
+                Penyedia produk dan komponen Elektronika
+dan Robotika
+                </p>
+              </div>
+              <!-- <div class="col-lg-4 py-3 wow fadeInUp">
                 <img src="{{asset('front-end/assets/img/iot.png')}}" alt="" class="w-25 mb-3" />
                 <h5>Jasa IOT</h5>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Laborum, sit.
                 </p>
-              </div>
+              </div> -->
             </div>
-            <div class="row mt-5 text-center">
+            <!-- <div class="row mt-5 text-center">
               <div class="col-lg-4 py-3 wow fadeInUp">
-                <!-- <div class="display-3"><span class="mai-shapes"></span></div> -->
                 <img
                   src="{{asset('front-end/assets/img/presentation.png')}}"
                   alt=""
@@ -212,21 +224,8 @@
                   Laborum, sit.
                 </p>
               </div>
+            
               <div class="col-lg-4 py-3 wow fadeInUp">
-                <!-- <div class="display-3"><span class="mai-shapes"></span></div> -->
-                <img
-                  src="{{asset('front-end/assets/img/technology-products.png')}}"
-                  alt=""
-                  class="w-25 mb-3"
-                />
-                <h5>Penyedia Produk-Produk Robotika Dan Elektronika</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Laborum, sit.
-                </p>
-              </div>
-              <div class="col-lg-4 py-3 wow fadeInUp">
-                <!-- <div class="display-3"><span class="mai-shapes"></span></div> -->
                 <img src="{{asset('front-end/assets/img/cpu.png')}}" alt="" class="w-25 mb-3" />
                 <h5>Pembuatan Solusi Teknis Di Bidang Elektronika</h5>
                 <p>
@@ -234,7 +233,7 @@
                   Laborum, sit.
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
           <!-- .container -->
         </div>

@@ -52,7 +52,7 @@
                 <a href="/program" class="nav-link">Programs</a>
               </li>
               <li class="nav-item">
-                <a href="/product" class="nav-link">Products</a>
+                <a href="/product" class="nav-link">Solutions</a>
               </li>
               <li class="nav-item">
                 <a href="/portofolio" class="nav-link">Portofolio</a>
@@ -97,23 +97,40 @@
    <main>
     <div class="page-section">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center mb-5">
           <div class="col-lg-6 py-3">
             <div class="img-fluid text-center">
               <img src="{{asset('front-end/assets/img/logo.png')}}" alt="" class="w-75">
             </div>
           </div>
           <div class="col-lg-6 py-3 pr-lg-5">
-            <h2 class="title-section">We're <span class="marked">Dynamic</span> Team of Creatives People</h2>
+            <h2 class="title-section">About <span class="marked">Us</span></h2>
             <div class="divider"></div>
-            <p>Sebuah perusahaan yang bergerak di bidang penyediaan Jasa Training Robotika dan
-              Jasa Konsultasi serta Pembuatan Solusi Teknis di Bidang Elektronika.            
-              Jasa Konsultasi serta Pembuatan Solusi Teknis di Bidang Elektronika.            
-              <p> Robot Education
-              : Jasa Training Robotika meliputi Robotic Class, Private Class, dan Robotic Workshop</p>
-              <p>RE Solution : Jasa Konsultasi dan Pembuatan Solusi Teknis di Bidang Elektronika- RE
-              Store : Penyedia Produk-Produk Robotika dan Elektronika</p>
-            <a href="#" class="btn btn-danger">Our Portofolio</a>
+            <p style="text-align:justify">Robot Education Indonesia berdiri sejak tahun 2015, bergerak dalam bidang Robotic Training & Solution.</p> 
+            <!-- <br> -->
+            <p style="text-align:justify">Selama 7 tahun dalam bidang edukasi kami telah dipercaya oleh lebih dari 50+ sekolah dan mitra di Surabaya dan sekitarnya. Kami telah mengantarkan
+lebih dari 200+ prestasi juara baik di tingkat Kota, Provinsi, Nasional, maupun Internasional.
+</p>
+<p style="text-align:justify">Dalam bidang penyedia solusi teknis di bidang
+elektronika dan robotika, kami telah membantu
+lebih dari 100+ client dalam menyelesaikan lebih dari 150+ permasalahan yang mereka hadapi</p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+         
+          <div class="col-lg-12 py-3 pr-lg-5">
+            <h2 class="title-section">Our <span class="marked">Vision</span> and <span class="marked">Mission</span></h2>
+            <div class="divider"></div>
+            <h4>Vision</h4>
+            <p style="text-align:justify">Menjadi perusahaan teknologi yang inovatif dan terpercaya dalam menyediakan pelayanan jasa training dan solusi teknis di bidang elektronika dan robotika</p> 
+            <!-- <br> -->
+            <h4>Mission</h4>
+            <p style="text-align:justify">1. Menyediakan jasa training robotika untuk anak usia TK hingga Perguruan Tinggi dan umum</p> 
+            <p style="text-align:justify">2. Menyediakan jasa konsultasi dan pembuatan solusi teknis berbasis teknologi elektronika dan robotika berdasarkan permasalahan yang dialami oleh konsumen
+            </p> 
+            <p style="text-align:justify">3. Menjual produk-produk dan komponen teknologi khususnya di sektor elektronika
+            dan robotika untuk memenuhi kebutuhan konsumen</p> 
+           
           </div>
         </div>
       </div> <!-- .container -->

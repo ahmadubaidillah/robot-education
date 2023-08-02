@@ -52,7 +52,7 @@
                 <a href="/program" class="nav-link">Programs</a>
               </li>
               <li class="nav-item active">
-                <a href="/product" class="nav-link">Products</a>
+                <a href="/product" class="nav-link">Solutions</a>
               </li>
               <li class="nav-item">
                 <a href="/portofolio" class="nav-link">Portofolio</a>
@@ -83,7 +83,8 @@
                 <li class="breadcrumb-item active">Products</li>
               </ul>
             </nav>
-            <h1 class="text-center">Our Products</h1>
+            <h1 class="text-center">More About </h1>
+            <h1 class="text-center">RE Solutions and RE Store</h1>
           </div>
         </div>
       </div>
@@ -97,36 +98,57 @@
   <main>
     <div class="page-section">
       <div class="container">
-        <div class="row">
-        @foreach ($data as $row)
-          <div class="col-md-6 col-lg-4 py-3">
-            <a href="/productdetail/{{$row->id}}" class="text-dark" style="text-decoration:none">
-            <div class="card-blog">
-              <div class="header">
-                    <img src="{{asset('fotoproduct/'.$row->foto)}}" alt="" class="w-75 mx-auto" style="border-radius:10px"/>
-                </div>
-                <div class="body">
-                  <div class="post-title">{{$row->nama}}
-                  </div>
-                </div>
-                <div class="footer">
-                  <div class="post-title">Rp. {{$row->harga}}
-                  </div>
-              </div>
+      <div class="row align-items-center">
+         
+         <div class="col-lg-12 py-3 pr-lg-5 text-center">
+           <h2 class="title-section mb-3">More About <span class="marked">RE Solutions</span> </h2>
+           <p >RE Solution salah satu jasa dari dari Robot Education Indonesia. RE Solution berfokus pada penyediaan layanan konsultasi dan pembuatan alat-alat teknis berbasis elektronika dan robotika. RE Solution dapat melayani jasa dalam bidang:
+            </p> 
+            <div class="row ">
+            <div class="col-lg-6 py-3 pr-lg-5 text-center">
+            <img src="{{asset('asasas.png')}}" alt="" class="h-50 mb-2"/> 
+            <h3>Robotic Development</h3>
+          <p>Robotic Development disini berfokus pada pengembangan robot, baik itu
+robot untuk riset, kompetisi, ataupun
+robot yang bersifat aplikatif untuk membantu kehidupan sehari-hari</p>
             </div>
-            </a>
-          </div>
-        @endforeach
-          <div class="col-12 mt-5">
-            <nav aria-label="Page Navigation">
-              <ul class="pagination justify-content-center">
-              {{$data->links()}}
+            <div class="col-lg-6 py-3 pr-lg-5 text-center">
+            <img src="{{asset('front-end/assets/img/iot.png')}}" alt="" class="w-25 h-50 mb-2" />
+            <h3>IoT
+Solutions</h3>
+          <p>IoT Solutions (Internet of Things) disini berfokus pada aspek yang membantu proses efesiensi dan efektifitas
+kegiatan produksi dari industri kecil, menengah dan besar</p>
+            </div>
+            <div class="col-lg-6 py-3 pr-lg-5 text-center">
+            <img src="{{asset('Capturemxbckj.png')}}" alt="" class="h-50 mb-2"/> 
+            <h3>Automation
+Systems</h3>
+          <p>Automation System disini berfokus pada migrasi sistem dari yang
+awalnya manual menjadi serba
+otomatis, sehingga akan dapat meningkatkan produktivitas proses</p>
+            </div>
+            <div class="col-lg-6 py-3 pr-lg-5 text-center">
+            <img src="{{asset('Capturejhagsjdg.png')}}" alt="" class="h-50 mb-2"/> 
+            <h3>Web Development</h3>
+          <p>Web Development disini berfokus pada
+pembuatan web yang nantinya dapat membantu sebuah perusahaan atau brand
+dapat mengenalkan eksistensinya serta
+produknya kepada konsumen sehingga meningkatkan kepercayaan konsumen</p>
+            </div>
+            <div class="col-lg-6 py-3 pr-lg-5 text-center"></div>
+            <div class="col-lg-6 py-3 pr-lg-5 text-center"></div>
+            <div class="col-lg-6 py-3 pr-lg-5 text-center"></div>
+            </div>
+            <div class="col-lg-12 py-3 pr-lg-5 text-center">  <h2 class="title-section mb-3">More About <span class="marked">RE Store</span> </h2>
+           <p >RE Store merupakan salah satu produk dari Robot Education Indonesia. RE Store berfokus pada penyediaan produk-produk dan komponen elektronika dan
+robotika. Kami menjual berbagai jenis robot untuk kebutuhan edukasi serta alat- alat elektronik dan robotika yang spesifik sesuai permintaan konsumen. Untuk
+saat ini kami menjual produk kami melalui marketplace di Tokopedia dan
+Shopee.
+</p> </div>
+          
+         </div>
+       </div>        
 
-              </ul>
-            </nav>
-          </div>
-
-        </div>
   
       </div>
     </div>
